@@ -19,7 +19,7 @@ This repository contains a compact reference implementation of HCM (`hcm.py`) su
 ### Reference
 
 Whitepaper (Zenodo DOI):  
-https://doi.org/10.5281/zenodo.17745292
+
 
 ### License
 
