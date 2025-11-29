@@ -8,7 +8,7 @@ A lightweight, nonparametric drift detector for real-time and embedded systems.
 - **Constant-time updates**
 - **Works on microcontrollers and streaming systems**
 
-This repository contains a minimal 20-line reference implementation of HCM (`hcm.py`) suitable for:
+This repository contains a compact reference implementation of HCM (`hcm.py`) suitable for:
 
 - sensor drift detection
 - industrial monitoring
