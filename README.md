@@ -19,6 +19,8 @@ This repository contains a compact reference implementation of HCM (`hcm.py`) su
 ### Reference
 
 Whitepaper (Zenodo DOI):  
+Steven F. Srebranig (2025). Histogram Confidence Method (HCM).
+DOI: 10.5281/zenodo.17765246
 
 
 ### License
