@@ -1,28 +1,43 @@
-# Histogram Confidence Method (HCM)
+**Histogram Confidence Method (HCM)**
 
-A lightweight, nonparametric drift detector for real-time and embedded systems.
+A lightweight distribution monitoring primitive for real-time and embedded systems
 
-- **No model**
-- **No retraining**
-- **No hyperparameters**
-- **Constant-time updates**
-- **Works on microcontrollers and streaming systems**
+The Histogram Confidence Method (HCM) is a simple, interpretable method for monitoring distributional drift in streaming data. HCM is designed as a distribution monitoring primitive, not a predictive model or change-point estimator.
 
-This repository contains a compact reference implementation of HCM (`hcm.py`) suitable for:
+**Key properties**
 
-- sensor drift detection
-- industrial monitoring
-- ML model drift monitoring
-- anomaly detection
-- real-time embedded systems
+-No predictive model
 
-### Reference
+-No retraining
 
-Whitepaper (Zenodo DOI):  
-Steven F. Srebranig (2025). Histogram Confidence Method (HCM).
-DOI: 10.5281/zenodo.17765246
+-No online statistical estimation
 
+-Fixed computational cost per update
 
-### License
+-Suitable for microcontrollers, edge devices, and long-running systems
 
-MIT License (free for all use).
+HCM constructs a fixed baseline histogram from representative data using adaptive binning to ensure sufficient statistical mass per bin. During operation, incoming observations are aggregated in fixed-size windows and compared against precomputed confidence bounds. Sustained deviations from the baseline envelope indicate drift.
+
+This repository contains a compact reference implementation (hcm.py) suitable for:
+
+-sensor and signal drift monitoring
+
+-industrial and process monitoring
+
+-ML input distribution monitoring
+
+-anomaly and deviation detection
+
+-real-time and embedded systems
+
+**Reference**
+
+Whitepaper:
+Steven F. Srebranig (2026). The Histogram Confidence Method (HCM): A Lightweight Distribution Monitoring Primitive for Drift Detection.
+Zenodo DOI: 10.5281/zenodo.18204048
+
+(If you intend to keep a separate code DOI, we should explicitly label it here.)
+
+License
+
+MIT License — free for all use.
